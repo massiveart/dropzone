@@ -1370,7 +1370,7 @@
                 if(typeof files[i] != "undefined"){
                     formData.append(this._getParamName(i), files[i], files[i].name);
                 }else{
-                    formData.append(this._getParamName(i), files[i], "");
+                    formData.append(this._getParamName(i), "");
                 }
             }
             return this.submitRequest(xhr, formData, files);
